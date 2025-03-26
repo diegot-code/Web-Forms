@@ -1,0 +1,27 @@
+* {
+  box-sizing: border-box;
+}
+
+#userName {
+  padding: 2rem;
+  width: 60rem;
+  font-size: 2rem;
+}
+
+.link {
+  font-size: 1.5rem;
+  margin-bottom: 4rem;
+  text-decoration: none;
+  font-weight: bold;
+  color: rgb(18, 135, 135);
+  /* transition: all 2s ease-in-out; */
+}
+
+.link:hover,
+.link:focus {
+  text-decoration: underline;
+}
+
+input[type="text"]:focus {
+  border-radius: 10px;
+}

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Web Forms</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Web Forms</h1>
+
+    <a class="link" href="https://google.com">Go to Google</a>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus
+      voluptatem incidunt autem nisi corrupti debitis.
+    </p>
+
+    <form action="process.php" method="post">
+      <!-- get method -->
+      <!-- labels -->
+      <!-- <label for="userName">Enter your name:</label> -->
+      <input
+        type="text"
+        name="userName"
+        id="userName"
+        placeholder="Enter Username (ex. Yellow145, Knight567)"
+        required
+      />
+      <br /><br />
+      <!-- <label for="userEmail">Enter your email:</label> -->
+
+      <input
+        type="email"
+        name="userEmail"
+        id="userEmail"
+        value="jax@code.com"
+        required
+      />
+      <br /><br />
+
+      <!-- Make up a password: <input type="password" name="userPassword" required /> -->
+      <br />
+      <!-- Inspector tool to show password -->
+
+      Pick your favorite color: <br />
+      <input type="radio" name="favoriteColor" value="Blue" required />
+      Blue<br />
+      <input type="radio" name="favoriteColor" value="Red" required />
+      Red<br />
+      <input type="radio" name="favoriteColor" value="Green" required />
+      Green<br />
+
+      <br /><br />
+
+      Pick you favorite Pet: <br />
+
+      <input type="checkbox" name="favoritePet[]" value="Dog" /> Dog
+      <br />
+      <input type="checkbox" name="favoritePet[]" value="Cat" /> Cat <br />
+      <input type="checkbox" name="favoritePet[]" value="Horse" /> Horse <br />
+      <input type="checkbox" name="favoritePet[]" value="Bird" /> Bird <br />
+      <br /><br />
+      <textarea name="specialInstructions"></textarea>
+      <br /><br />
+      <select name="favoriteProgrammingLanguages">
+        <option value="HTML">HTML</option>
+        <option value="JavaScript">JavaScript</option>
+        <option value="PHP" selected>PHP</option>
+        <option value="Python">Pyton</option>
+      </select>
+
+      <br /><br />
+      <button type="submit" name="newUserForm" value="true">Submit</button>
+    </form>
+  </body>
+</html>
